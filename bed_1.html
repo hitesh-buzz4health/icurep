@@ -10,7 +10,8 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
-
+    <link href="css/plugins/slick/slick.css" rel="stylesheet">
+    <link href="css/plugins/slick/slick-theme.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
@@ -111,7 +112,7 @@
                 <div class="col-lg-4">
                                 <div class="ibox float-e-margins">
                                     <div class="ibox-title">
-                                        <h5>Small todo list</h5>
+                                        <h5>Pending alerts about this bed</h5>
                                         <div class="ibox-tools">
                                             <a class="collapse-link">
                                                 <i class="fa fa-chevron-up"></i>
@@ -125,34 +126,18 @@
                                         <ul class="todo-list m-t small-list">
                                             <li>
                                                 <a href="#" class="check-link"><i class="fa fa-check-square"></i> </a>
-                                                <span class="m-l-xs todo-completed">Buy a milk</span>
+                                                <span class="m-l-xs todo-completed">Change the bed position to 45&deg twice today</span>
 
                                             </li>
                                             <li>
                                                 <a href="#" class="check-link"><i class="fa fa-square-o"></i> </a>
-                                                <span class="m-l-xs">Go to shop and find some products.</span>
+                                                <span class="m-l-xs">Take notes for patient's current weight</span>
 
                                             </li>
                                             <li>
                                                 <a href="#" class="check-link"><i class="fa fa-square-o"></i> </a>
-                                                <span class="m-l-xs">Send documents to Mike</span>
+                                                <span class="m-l-xs">Update the dosage</span>
                                                 <small class="label label-primary"><i class="fa fa-clock-o"></i> 1 mins</small>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="check-link"><i class="fa fa-square-o"></i> </a>
-                                                <span class="m-l-xs">Go to the doctor dr Smith</span>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="check-link"><i class="fa fa-check-square"></i> </a>
-                                                <span class="m-l-xs todo-completed">Plan vacation</span>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="check-link"><i class="fa fa-square-o"></i> </a>
-                                                <span class="m-l-xs">Create new stuff</span>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="check-link"><i class="fa fa-square-o"></i> </a>
-                                                <span class="m-l-xs">Call to Anna for dinner</span>
                                             </li>
                                         </ul>
                                     </div>
@@ -171,7 +156,7 @@
                     <div class="col-sm-4">
                         <div class="form-group">
                             <label class="control-label" for="order_id">Patient Weight</label>
-                            <input type="text" id="order_id" name="order_id" value="" placeholder="Patient Current Weight" class="form-control">
+                            <input type="text" id="order_id" name="order_id" value="" placeholder="85" class="form-control">
                         </div>
                     </div>
                     <div class="col-sm-4">
@@ -196,30 +181,121 @@
                 <div class="col-lg-6">
                     <div class="ibox float-e-margins">
                         <div class="ibox-title">
-                            <span class="label label-success pull-right">Today</span>
+                            <!-- <span class="label label-success pull-right">Today
+                                 -->
+                                     <span class="btn-group pull-right">
+                                        <button data-toggle="dropdown" class="btn btn-primary btn-xs dropdown-toggle">Today <span class="caret"></span></button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Yesterday</a></li>
+                                            <li><a href="#">27 Nov</a></li>
+                                            <li><a href="#">26 Nov</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Calender can be added here</a></li>
+                                        </ul>
+                                    </span>
+                            <!-- </span> -->
                             <h5>Bed Position</h5>
                         </div>
-                        <div class="ibox-content">
-                            <h1 class="no-margins">Position Status</h1>
-                            <div class="stat-percent font-bold text-success">47 &deg</div>
-                            <small>Aangle set at</small>
+                        <div class="ibox-content align-center">
+                            <!-- <span class="fa fa-wheelchair text-navy"></span> -->
+                            <img src="img/bed_position_1_large.png">
+                            <h5><strong>Bed Sore</strong> Prevention</h5>
+                            <p>Upper Back & Hands</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="ibox float-e-margins">
                         <div class="ibox-title">
-                            <span class="label label-info pull-right">Today</span>
-                            <h5>Bed Sore Prevention</h5>
+                            <!-- <span class="label label-success pull-right">Today
+                                 -->
+                                     <span class="btn-group pull-right">
+                                        <button data-toggle="dropdown" class="btn btn-primary btn-xs dropdown-toggle">Today <span class="caret"></span></button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Yesterday</a></li>
+                                            <li><a href="#">27 Nov</a></li>
+                                            <li><a href="#">26 Nov</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Calender can be added here</a></li>
+                                        </ul>
+                                    </span>
+                            <!-- </span> -->
+                            <h5>Bed Sore Preventin</h5>
                         </div>
-                        <div class="ibox-content">
-                            <h1 class="no-margins">Shoulder & Thigh</h1>
-                            <div class="stat-percent font-bold text-info">20% <i class="fa fa-level-up"></i></div>
-                            <small>Extra Information</small>
+                        <div class="ibox-content align-center">
+                            <!-- <span class="fa fa-wheelchair text-navy"></span> -->
+                            <img src="img/thermal_image_1_large.png">
+                            <h5><strong>Bed</strong> Sore</h5>
+                            <p>Upper Back and Hands</p>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Carousel -->
+
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <div class="ibox">
+                        <div class="slick_demo_3">
+                                            <div class="col-lg-6">
+                                                <div class="ibox float-e-margins">
+                                                    <div class="ibox-title">
+                                                        <span class="btn-group pull-right">
+                                                            <button data-toggle="dropdown" class="btn btn-primary btn-xs dropdown-toggle">Today <span class="caret"></span></button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a href="#">Yesterday</a></li>
+                                                                <li><a href="#">27 Nov</a></li>
+                                                                <li><a href="#">26 Nov</a></li>
+                                                                <li class="divider"></li>
+                                                                <li><a href="#">Calender can be added here</a></li>
+                                                            </ul>
+                                                        </span>
+                                                        <h5>Bed Sore Prevention</h5>
+                                                     </div>
+                                                    <div class="ibox-content align-center">
+                                                        <!-- <span class="fa fa-wheelchair text-navy"></span> -->
+                                                        <img src="img/thermal_image_1_large.png">
+                                                        <h5><strong>Bed</strong> Sore</h5>
+                                                        <p>Upper Back and Hands</p>
+                                                    </div>
+                                                </div>
+                                             </div>
+                            <div>
+                                <div class="ibox-content">
+                                    <h2>Slide 2</h2>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                        unknown printer took a galley of type and scrambled it to make a type specimen
+                                        book. It has survived not only five centuries, but also the leap.
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                        unknown printer took a galley of type and scrambled it to make a type specimen
+                                        book. It has survived not only five centuries, but also the leap.
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="ibox-content">
+                                    <h2>Slide 3</h2>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                        unknown printer took a galley of type and scrambled it to make a type specimen
+                                        book. It has survived not only five centuries, but also the leap.
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                        book. It has survived not only five centuries, but also the leap.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //Carousel -->
         </div>
         <div class="footer">
           
@@ -628,6 +704,7 @@
     <script src="js/inspinia.js"></script>
     <script src="js/plugins/pace/pace.min.js"></script>
 
+
     <!-- jQuery UI -->
     <script src="js/plugins/jquery-ui/jquery-ui.min.js"></script>
 
@@ -644,8 +721,27 @@
     <!-- Sparkline demo data  -->
     <script src="js/demo/sparkline-demo.js"></script>
 
+        <!-- ChartJS-->
+    <script src="js/plugins/chartJs/Chart.min.js"></script>
+    <script src="js/demo/chartjs-demo.js"></script>
+
+    <!-- slick carousel-->
+    <script src="js/plugins/slick/slick.min.js"></script>
+
+
     <script>
         $(document).ready(function() {
+
+            // To run crousel
+            $('.slick_demo_3').slick({
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear',
+                adaptiveHeight: true
+            });
+            // To run crousel
+
             $('.chart').easyPieChart({
                 barColor: '#f8ac59',
 //                scaleColor: false,
@@ -808,9 +904,8 @@
         });
     </script>
 
-        <!-- ChartJS-->
-    <script src="js/plugins/chartJs/Chart.min.js"></script>
-    <script src="js/demo/chartjs-demo.js"></script>
+
+
 
 </body>
 </html>
