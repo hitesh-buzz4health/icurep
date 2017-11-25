@@ -8566,3 +8566,8 @@ a.fill-div {
     width: 100%;
     text-decoration: none;
 }
+
+/*Sheerin*/
+.align-center {
+  text-align: center;
+}
