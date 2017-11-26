@@ -8571,3 +8571,7 @@ a.fill-div {
 .align-center {
   text-align: center;
 }
+
+.align-center img {
+  display: -webkit-inline-box;
+}
