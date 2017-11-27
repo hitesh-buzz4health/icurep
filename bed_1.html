@@ -155,20 +155,21 @@
                             <div class="row">
                     <div class="col-sm-4">
                         <div class="form-group">
-                            <label class="control-label" for="order_id">Patient Weight</label>
-                            <input type="text" id="order_id" name="order_id" value="" placeholder="85" class="form-control">
+
+                            <label class="control-label" for="order_id">Current Patient Weight</label>
+                            <input type="text" id="weight" name="order_id" value="85" placeholder="85" class="form-control">
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="form-group">
-                            <label class="control-label" for="status">Doasage Factor</label>
-                            <input type="text" id="status" name="status" value="" placeholder="Enter Dosage Factor" class="form-control"> 
+                            <label class="control-label" for="status">Dosage Factor</label>
+                            <input type="text" id="dosage" name="status" value="" placeholder="Enter Dosage Factor" class="form-control"> 
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="form-group">
                             <label class="control-label" for="customer">mg</label>
-                            <input type="text" id="customer" name="customer" value="" placeholder="0.0000" class="form-control">
+                            <input type="text" id="total_dosage" name="customer" value="" placeholder="0.0000" class="form-control">
                         </div>
                     </div>
                 </div>
@@ -255,6 +256,7 @@
                                             <!-- <p>Upper Back and Hands</p>                               -->
                             </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -340,6 +342,7 @@
                         </div>
                     </div>
                 </div>
+
             <!-- //Thermal Carousel -->
             </div>
         </div>
@@ -947,7 +950,21 @@
                     }]
                 },
             });
+          
+         
         });
+        $('input[id=weight]').change(function() {
+                var weight = $('#weight').val();
+                var dosage_unit = $('#dosage').val();
+                $('#total_dosage').val(weight * dosage_unit);
+
+            });
+                $('input[id=dosage]').change(function() {
+                var weight = $('#weight').val();
+                var dosage_unit = $('#dosage').val();
+                $('#total_dosage').val(weight * dosage_unit);
+
+            });
     </script>
 
 

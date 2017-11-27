@@ -112,12 +112,11 @@
                 </ol>
 
                 <button type="button" class="btn btn-outline btn-primary active" onclick="location.href='./notifications.html';">All</button>
-                <button type="button" class="btn btn-outline btn-primary" onclick="location.href='./notifications_naresh.html';">Nurse Naresh</button>
-                <button type="button" class="btn btn-outline btn-primary" onclick="location.href='./notifications_suresh.html';">Nurse Suresh</button>
-                <button type="button" class="btn btn-outline btn-primary" onclick="location.href='./notifications_sushma.html';">Nurse Sushma</button>
-                <button type="button" class="btn btn-outline btn-primary" onclick="location.href='./notifications_kapil.html';">Nurse Kapil</button>
-                <button type="button" class="btn btn-outline btn-primary" onclick="location.href='./notifications_poonam.html';">Nurse Poonam</button>
-                <button type="button" class="btn btn-outline btn-primary" onclick="location.href='./notifications_sandeep.html';">Nurse Sandeep</button>
+                <button id = "show_naresh_notifications" type="button" class="btn btn-outline btn-primary" >Nurse Naresh</button>
+                <button id = "show_suresh_notifications" type="button" class="btn btn-outline btn-primary" >Nurse Suresh</button>
+                <button id = "show_kapil_notifications" type="button" class="btn btn-outline btn-primary" >Nurse Kapil</button>
+                <button id = "show_poonam_notifications" type="button" class="btn btn-outline btn-primary" >Nurse Poonam</button>
+                <button id = "show_sandeep_notifications" type="button" class="btn btn-outline btn-primary" >Nurse Sandeep</button>
             </div>
             <div class="col-lg-2">
 
@@ -152,214 +151,235 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
+                                    <tr class="notifications naresh_notifications">
                                         <td><small>Pending...</small></td>
-                                        <td>Set Bed ID 1 position at 45&deg twice today</td>
+                                        <td><audio  controls controlsList="nodownload"> 
+                                      <source src="https://s3-us-west-1.amazonaws.com/prod-edx/MartinLKing/Audio/551205004+MLK+speech+from+first+day+of+movement.mp3"> 
+                                      <p>Your browser does not support HTML5 audio. Try switching to Chrome.</p> 
+                                    </audio></td>
+
                                         <td>Dr. Monica</td>
-                                        <td class="text-navy">Nurse Suresh
+                                        <td class="text-navy">Nurse Naresh
                                         <span class="pull-right text-muted small">4 minutes ago</span></td>
                                     </tr>
-                                    <tr>
+                                    <tr class="notifications naresh_notifications">
                                         <td><span class="label label-danger">Critical</span> </td>
-                                        <td>Set Bed ID 3 in Crtical Care ICU position at 30&deg today</td>
+                                        <td><audio  controls controlsList="nodownload"> 
+                                      <source src="https://s3-us-west-1.amazonaws.com/prod-edx/MartinLKing/Audio/551205004+MLK+speech+from+first+day+of+movement.mp3"></td>
                                         <td>Dr. Prasahant</td>
-                                        <td class="text-navy">Nurse Sushma
+                                        <td class="text-navy">Nurse Naresh
                                         <span class="pull-right text-muted small">15 minutes ago</span></td>
                                     </tr>
-                                    <tr>
+                                    <tr class="notifications naresh_notifications">
                                         <td><small>Pending...</small> </td>
                                         <td>Set Bed ID 2 in Neuro ICU position at 90&deg</td>
                                         <td>Dr. Suchita</td>
-                                        <td class="text-navy">Nurse Suresh
+                                        <td class="text-navy">Nurse Naresh
                                         <span class="pull-right text-muted small">14 hours ago</span></td>
                                     </tr>
-                                    <tr>
+                                    <tr class="notifications suresh_notifications">
                                         <td><small>Pending...</small> </td>
-                                        <td>Set Bed ID 6 in Crtical Care ICU position at 45&deg</td>
+                                        <td>Increase the vitamins for Bed ID 6 in Crtical Care ICU</td>
                                         <td>Dr. Rahul</td>
-                                        <td class="text-navy">Nurse Kapil
+                                        <td class="text-navy">Nurse Suresh
                                         <span class="pull-right text-muted small">18 hours ago</span></td>
                                     </tr>
-                                    <tr>
+                                    <tr class="notifications suresh_notifications">
                                         <td><small>Pending...</small> </td>
-                                        <td>Set Bed ID 5 in Medical ICU at 30&deg</td>
+                                        <td>Take ultrasound for Bed ID 5 in Neuro ICU</td>
                                         <td>Dr. Kapil</td>
-                                        <td class="text-navy">Nurse Poonam
+                                        <td class="text-navy">Nurse Suresh
                                         <span class="pull-right text-muted small">Yesterday</span></td>
                                     </tr>
-                                    <tr>
+                                    <tr class="notifications suresh_notifications">
                                         <td><span class="label label-success">Completed</span> </td>
-                                        <td>Set Bed ID 3 in Surgical ICU position at 0&deg</td>
+                                        <td><audio  controls controlsList="nodownload"> 
+                                      <source src="https://s3-us-west-1.amazonaws.com/prod-edx/MartinLKing/Audio/551205004+MLK+speech+from+first+day+of+movement.mp3"></td>
                                         <td>Dr. Prashant</td>
-                                        <td class="text-navy">Nurse Sandeep
+                                        <td class="text-navy">Nurse Suresh
                                         <span class="pull-right text-muted small">Yesterday</span></td>
                                     </tr>
-                                    <tr>
+                                    <tr class="notifications suresh_notifications">
                                         <td><small>Pending...</small> </td>
-                                        <td>Set Bed ID 4 in Crtical Care ICU position at 45&deg</td>
+                                        <td><audio  controls controlsList="nodownload"> 
+                                      <source src="https://s3-us-west-1.amazonaws.com/prod-edx/MartinLKing/Audio/551205004+MLK+speech+from+first+day+of+movement.mp3"></td>
                                         <td>Dr. Monica</td>
                                         <td class="text-navy">Nurse Suresh
                                         <span class="pull-right text-muted small">Yesterday</span></td>
                                     </tr>
-                                    <tr>
+                                    <tr class="notifications poonam_notifications">
                                         <td><small>Pending...</small> </td>
-                                        <td>Calculate dosage of Bed ID 5 in Medical ICU</td>
+                                        <td><audio  controls controlsList="nodownload"> 
+                                      <source src="https://s3-us-west-1.amazonaws.com/prod-edx/MartinLKing/Audio/551205004+MLK+speech+from+first+day+of+movement.mp3"></td>
                                         <td>Dr. Monica</td>
-                                        <td class="text-navy">Nurse Naresh
+                                        <td class="text-navy">Nurse Poonam
                                         <span class="pull-right text-muted small">Yesterday</span></td>
                                     </tr>
-                                    <tr>
+                                    <tr class="notifications sandeep_notifications">
                                         <td><small>Pending...</small> </td>
-                                        <td>Set Bed ID 4 in Crtical Care ICU position at 45&deg</td>
+                                        <td><audio  controls controlsList="nodownload"> 
+                                      <source src="https://s3-us-west-1.amazonaws.com/prod-edx/MartinLKing/Audio/551205004+MLK+speech+from+first+day+of+movement.mp3"></td>
                                         <td>Dr. Monica</td>
-                                        <td class="text-navy">Nurse Naresh
+                                        <td class="text-navy">Nurse Sandep
                                         <span class="pull-right text-muted small">Yesterday</span></td>
                                     </tr>
-                                    <tr>
+                                    <tr class="notifications sandeep_notifications">
                                         <td><small>Pending...</small> </td>
-                                        <td>Set Bed ID 4 in Crtical Care ICU position at 45&deg</td>
+                                        <td><audio  controls controlsList="nodownload"> 
+                                      <source src="https://s3-us-west-1.amazonaws.com/prod-edx/MartinLKing/Audio/551205004+MLK+speech+from+first+day+of+movement.mp3"></td>
                                         <td>Dr. Monica</td>
                                         <td class="text-navy">Nurse Sandeep
                                         <span class="pull-right text-muted small">Yesterday</span></td>
                                     </tr>
-                                    <tr>
-                                        <td><small>Pending...</small> </td>
-                                        <td>Set Bed ID 4 in Crtical Care ICU position at 45&deg</td>
-                                        <td>Dr. Monica</td>
-                                        <td class="text-navy">Nurse Naresh
-                                        <span class="pull-right text-muted small">Yesterday</span></td>
-                                    </tr>
-                                    <tr>
+                                    <tr class="notifications kapil_notifications">
                                         <td><small>Pending...</small> </td>
                                         <td>Set Bed ID 4 in Crtical Care ICU position at 45&deg</td>
                                         <td>Dr. Monica</td>
                                         <td class="text-navy">Nurse Kapil
                                         <span class="pull-right text-muted small">Yesterday</span></td>
                                     </tr>
-                                    <tr>
+                                    <tr class="notifications kapil_notifications">
                                         <td><small>Pending...</small> </td>
-                                        <td>Set Bed ID 4 in Crtical Care ICU position at 45&deg</td>
-                                        <td>Dr. Monica</td>
-                                        <td class="text-navy">Nurse Naresh
-                                        <span class="pull-right text-muted small">Yesterday</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td><small>Pending...</small> </td>
-                                        <td>Set Bed ID 4 in Crtical Care ICU position at 45&deg</td>
-                                        <td>Dr. Monica</td>
-                                        <td class="text-navy">Nurse Suresh
-                                        <span class="pull-right text-muted small">Yesterday</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td><small>Pending...</small> </td>
-                                        <td>Set Bed ID 4 in Crtical Care ICU position at 45&deg</td>
-                                        <td>Dr. Monica</td>
-                                        <td class="text-navy">Nurse Sandeep
-                                        <span class="pull-right text-muted small">Yesterday</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td><small>Pending...</small> </td>
-                                        <td>Set Bed ID 4 in Crtical Care ICU position at 45&deg</td>
-                                        <td>Dr. Monica</td>
-                                        <td class="text-navy">Nurse Naresh
-                                        <span class="pull-right text-muted small">Yesterday</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td><small>Pending...</small> </td>
-                                        <td>Set Bed ID 4 in Crtical Care ICU position at 45&deg</td>
-                                        <td>Dr. Monica</td>
-                                        <td class="text-navy">Nurse Poonam
-                                        <span class="pull-right text-muted small">Yesterday</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td><small>Pending...</small> </td>
-                                        <td>Set Bed ID 4 in Crtical Care ICU position at 45&deg</td>
-                                        <td>Dr. Monica</td>
-                                        <td class="text-navy">Nurse Sandeep
-                                        <span class="pull-right text-muted small">Yesterday</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td><small>Pending...</small> </td>
-                                        <td>Set Bed ID 4 in Crtical Care ICU position at 45&deg</td>
-                                        <td>Dr. Monica</td>
-                                        <td class="text-navy">Nurse Naresh
-                                        <span class="pull-right text-muted small">Yesterday</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td><small>Pending...</small> </td>
-                                        <td>Set Bed ID 4 in Crtical Care ICU position at 45&deg</td>
+                                        <td><audio  controls controlsList="nodownload"> 
+                                      <source src="https://s3-us-west-1.amazonaws.com/prod-edx/MartinLKing/Audio/551205004+MLK+speech+from+first+day+of+movement.mp3"></td>
                                         <td>Dr. Monica</td>
                                         <td class="text-navy">Nurse Kapil
                                         <span class="pull-right text-muted small">Yesterday</span></td>
                                     </tr>
-                                    <tr>
+                                    <tr class="notifications sandeep_notifications">
                                         <td><small>Pending...</small> </td>
-                                        <td>Set Bed ID 4 in Crtical Care ICU position at 45&deg</td>
-                                        <td>Dr. Monica</td>
-                                        <td class="text-navy">Nurse Naresh
-                                        <span class="pull-right text-muted small">Yesterday</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td><small>Pending...</small> </td>
-                                        <td>Set Bed ID 4 in Crtical Care ICU position at 45&deg</td>
-                                        <td>Dr. Monica</td>
-                                        <td class="text-navy">Nurse Naresh
-                                        <span class="pull-right text-muted small">Yesterday</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td><small>Pending...</small> </td>
-                                        <td>Set Bed ID 4 in Crtical Care ICU position at 45&deg</td>
-                                        <td>Dr. Monica</td>
-                                        <td class="text-navy">Nurse Suresh
-                                        <span class="pull-right text-muted small">Yesterday</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td><small>Pending...</small> </td>
-                                        <td>Set Bed ID 4 in Crtical Care ICU position at 45&deg</td>
+                                        <td><audio  controls controlsList="nodownload"> 
+                                      <source src="https://s3-us-west-1.amazonaws.com/prod-edx/MartinLKing/Audio/551205004+MLK+speech+from+first+day+of+movement.mp3"></td>
                                         <td>Dr. Monica</td>
                                         <td class="text-navy">Nurse Sandeep
                                         <span class="pull-right text-muted small">Yesterday</span></td>
                                     </tr>
-                                    <tr>
+                                    <tr class="notifications poonam_notifications">
                                         <td><small>Pending...</small> </td>
-                                        <td>Set Bed ID 4 in Crtical Care ICU position at 45&deg</td>
+                                        <td><audio  controls controlsList="nodownload"> 
+                                      <source src="https://s3-us-west-1.amazonaws.com/prod-edx/MartinLKing/Audio/551205004+MLK+speech+from+first+day+of+movement.mp3"></td>
                                         <td>Dr. Monica</td>
                                         <td class="text-navy">Nurse Poonam
                                         <span class="pull-right text-muted small">Yesterday</span></td>
                                     </tr>
-                                    <tr>
+                                    <tr class="notifications sandeep_notifications">
                                         <td><small>Pending...</small> </td>
-                                        <td>Set Bed ID 4 in Crtical Care ICU position at 45&deg</td>
-                                        <td>Dr. Monica</td>
-                                        <td class="text-navy">Nurse Suresh
-                                        <span class="pull-right text-muted small">Yesterday</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td><small>Pending...</small> </td>
-                                        <td>Set Bed ID 4 in Crtical Care ICU position at 45&deg</td>
-                                        <td>Dr. Monica</td>
-                                        <td class="text-navy">Nurse Naresh
-                                        <span class="pull-right text-muted small">Yesterday</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td><small>Pending...</small> </td>
-                                        <td>Set Bed ID 4 in Crtical Care ICU position at 45&deg</td>
-                                        <td>Dr. Monica</td>
-                                        <td class="text-navy">Nurse Poonam
-                                        <span class="pull-right text-muted small">Yesterday</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td><small>Pending...</small> </td>
-                                        <td>Set Bed ID 4 in Crtical Care ICU position at 45&deg</td>
+                                        <td>Check oxygen mask of Bed ID 9 in Neuro ICU</td>
                                         <td>Dr. Monica</td>
                                         <td class="text-navy">Nurse Sandeep
                                         <span class="pull-right text-muted small">Yesterday</span></td>
                                     </tr>
-                                    <tr>
+                                    <tr class="notifications sandeep_notifications">
                                         <td><small>Pending...</small> </td>
-                                        <td>Set Bed ID 4 in Crtical Care ICU position at 45&deg</td>
+                                        <td>Shift patient of Bed ID 11 to Critical Care ICU</td>
+                                        <td>Dr. Monica</td>
+                                        <td class="text-navy">Nurse Sandeep
+                                        <span class="pull-right text-muted small">Yesterday</span></td>
+                                    </tr>
+                                    <tr class="notifications sandeep_notifications">
+                                        <td><small>Pending...</small> </td>
+                                        <td>Change the meds for Bed ID 5 as prescribed</td>
+                                        <td>Dr. Monica</td>
+                                        <td class="text-navy">Nurse Sandeep
+                                        <span class="pull-right text-muted small">Yesterday</span></td>
+
+                                    </tr>
+                                    <tr class="notifications sandeep_notifications">
+                                        <td><small>Pending...</small> </td>
+                                        <td><audio  controls controlsList="nodownload"> 
+                                      <source src="https://s3-us-west-1.amazonaws.com/prod-edx/MartinLKing/Audio/551205004+MLK+speech+from+first+day+of+movement.mp3"></td>
+                                        <td>Dr. Monica</td>
+                                        <td class="text-navy">Nurse Sandeep
+                                        <span class="pull-right text-muted small">Yesterday</span></td>
+                                    </tr>
+                                    <tr class="notifications kapil_notifications">
+                                        <td><small>Pending...</small> </td>
+                                        <td><audio  controls controlsList="nodownload"> 
+                                      <source src="https://s3-us-west-1.amazonaws.com/prod-edx/MartinLKing/Audio/551205004+MLK+speech+from+first+day+of+movement.mp3"></td>
+                                        <td>Dr. Monica</td>
+                                        <td class="text-navy">Nurse Kapil
+                                        <span class="pull-right text-muted small">Yesterday</span></td>
+                                    </tr>
+                                    <tr class="notifications kapil_notifications">
+                                        <td><small>Pending...</small> </td>
+                                        <td>Set Bed ID 4 in Crtical Care ICU position at 0&deg</td>
+                                        <td>Dr. Monica</td>
+                                        <td class="text-navy">Nurse Kapil
+                                        <span class="pull-right text-muted small">Yesterday</span></td>
+                                    </tr>
+                                    <tr class="notifications poonam_notifications">
+                                        <td><small>Pending...</small> </td>
+                                        <td><audio  controls controlsList="nodownload"> 
+                                      <source src="https://s3-us-west-1.amazonaws.com/prod-edx/MartinLKing/Audio/551205004+MLK+speech+from+first+day+of+movement.mp3"></td>
+                                        <td>Dr. Monica</td>
+                                        <td class="text-navy">Nurse Poonam
+                                        <span class="pull-right text-muted small">Yesterday</span></td>
+                                    </tr>
+                                    <tr class="notifications poonam_notifications"> 
+                                        <td><small>Pending...</small> </td>
+                                        <td><audio  controls controlsList="nodownload"> 
+                                      <source src="https://s3-us-west-1.amazonaws.com/prod-edx/MartinLKing/Audio/551205004+MLK+speech+from+first+day+of+movement.mp3"></td>
+                                        <td>Dr. Monica</td>
+                                        <td class="text-navy">Nurse Poonam
+                                        <span class="pull-right text-muted small">Yesterday</span></td>
+                                    </tr>
+                                    <tr class="notifications poonam_notifications">
+                                        <td><small>Pending...</small> </td>
+                                        <td><audio  controls controlsList="nodownload"> 
+                                      <source src="https://s3-us-west-1.amazonaws.com/prod-edx/MartinLKing/Audio/551205004+MLK+speech+from+first+day+of+movement.mp3"></td>
+                                        <td>Dr. Monica</td>
+                                        <td class="text-navy">Nurse Poonam
+                                        <span class="pull-right text-muted small">Yesterday</span></td>
+                                    </tr>
+                                    <tr class="notifications sandeep_notifications">
+                                        <td><small>Pending...</small> </td>
+                                        <td>Check blood pressure of Bed ID 2 in Medical ICU</td>
+                                        <td>Dr. Monica</td>
+                                        <td class="text-navy">Nurse Sandeep
+                                        <span class="pull-right text-muted small">Yesterday</span></td>
+                                    </tr>
+                                    <tr class="notifications poonam_notifications">
+                                        <td><small>Pending...</small> </td>
+                                        <td>Check blood pressure and urine tests of Bed ID 3 in Surgical ICU</td>
+                                        <td>Dr. Monica</td>
+                                        <td class="text-navy">Nurse Poonam
+                                        <span class="pull-right text-muted small">Yesterday</span></td>
+                                    </tr>
+                                    <tr class="notifications suresh_notifications">
+                                        <td><small>Pending...</small> </td>
+                                        <td>Move the Bed ID 2 Patient to General Ward</td>
+                                        <td>Dr. Monica</td>
+                                        <td class="text-navy">Nurse Suresh
+                                        <span class="pull-right text-muted small">Yesterday</span></td>
+                                    </tr>
+                                    <tr class="notifications naresh_notifications">
+                                        <td><small>Pending...</small> </td>
+                                        <td>Give insulin to Bed ID 6 in Surgical ICU</td>
                                         <td>Dr. Monica</td>
                                         <td class="text-navy">Nurse Naresh
+                                        <span class="pull-right text-muted small">Yesterday</span></td>
+                                    </tr>
+                                    <tr class="notifications poonam_notifications">
+                                        <td><small>Pending...</small> </td>
+                                        <td><audio  controls controlsList="nodownload"> 
+                                      <source src="https://s3-us-west-1.amazonaws.com/prod-edx/MartinLKing/Audio/551205004+MLK+speech+from+first+day+of+movement.mp3"></td>
+                                        <td>Dr. Monica</td>
+                                        <td class="text-navy">Nurse Poonam
+                                        <span class="pull-right text-muted small">Yesterday</span></td>
+                                    </tr>
+                                    <tr class="notifications poonam_notifications">
+                                        <td><small>Pending...</small> </td>
+                                        <td><audio  controls controlsList="nodownload"> 
+                                      <source src="https://s3-us-west-1.amazonaws.com/prod-edx/MartinLKing/Audio/551205004+MLK+speech+from+first+day+of+movement.mp3"></td>
+                                        <td>Dr. Monica</td>
+                                        <td class="text-navy">Nurse Poonam
+                                        <span class="pull-right text-muted small">Yesterday</span></td>
+                                    </tr>
+                                    <tr class="notifications poonam_notifications">
+                                        <td><small>Pending...</small> </td>
+                                        <td>Schedule the Tracheotomy procedure for Bed ID 1 tomorrow at 11am</td>
+                                        <td>Dr. Monica</td>
+                                        <td class="text-navy">Nurse Poonam
                                         <span class="pull-right text-muted small">Yesterday</span></td>
                                     </tr>
                                 </tbody>
@@ -960,7 +980,32 @@
                     }]
                 },
             });
+
         });
+            $('#show_naresh_notifications').click(function(){
+              $('.notifications').hide();
+              $('.naresh_notifications').show();
+            });
+            $('#show_suresh_notifications').click(function(){
+              $('.notifications').hide();
+              $('.suresh_notifications').show();
+            });
+            $('#show_kapil_notifications').click(function(){
+              $('.notifications').hide();
+              $('.kapil_notifications').show();
+            });
+            $('#show_poonam_notifications').click(function(){
+              $('.notifications').hide();
+              $('.poonam_notifications').show();
+            });
+            $('#show_sandeep_notifications').click(function(){
+              $('.notifications').hide();
+              $('.sandeep_notifications').show();
+            });
+            $('#show_sushma_notifications').click(function(){
+              $('.notifications').hide();
+              $('.sushma_notifications').show();
+            });
     </script>
 </body>
 </html>
