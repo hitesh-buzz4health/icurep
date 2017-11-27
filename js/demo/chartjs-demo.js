@@ -1,22 +1,23 @@
 $(function () {
 
     var lineData = {
-        labels: ["1st", "2nd", "3rd", "4th", "5th", "6th", "7th","8th", "9th", "10th", "11th", "12th", "13th", "14th"],
+        labels: ["16th Nov 6PM", "17th Nov 6PM", "18th Nov 6PM", "19th Nov 6PM", "20th Nov 6PM", "21st Nov 6PM", "22nd Nov 6PM","23rd Nov 6PM", "24th Nov 6PM", "25th Nov 6PM", "26th Nov 6PM", "27th Nov 6PM", "28th Nov 6PM", "29th Nov 6PM"],
         datasets: [
 
             {
-                label: "Actual Weight",
+                label: "Patient Weight (Kg)",
                 backgroundColor: 'rgba(26,179,148,0.5)',
                 borderColor: "rgba(26,179,148,0.7)",
                 pointBackgroundColor: "rgba(26,179,148,1)",
                 pointBorderColor: "#fff",
-                data: [28, 48, 40, 19, 86, 27, 90,19, 86, 27, 90, 100,100,110,120]
-            },{
-                label: "Expected Weight",
-                backgroundColor: 'rgba(220, 220, 220, 0.5)',
-                pointBorderColor: "#fff",
-                data: [65, 59, 80, 81, 56, 55, 40,80, 81, 56, 55, 60,70,60,70]
+                data: [42, 43, 44, 50, 46, 40, 42, 50, 52, 55, 60, 65, 75, 85,50]
             }
+            // ,{
+            //     label: "Expected Weight",
+            //     backgroundColor: 'rgba(220, 220, 220, 0.5)',
+            //     pointBorderColor: "#fff",
+            //     data: [65, 59, 80, 81, 56, 55, 40,80, 81, 56, 55, 60,70,60,70]
+            // }
         ]
     };
 
