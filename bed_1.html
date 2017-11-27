@@ -956,6 +956,12 @@
                 $('#total_dosage').val(weight * dosage_unit);
 
             });
+                $('input[id=dosage]').change(function() {
+                var weight = $('#weight').val();
+                var dosage_unit = $('#dosage').val();
+                $('#total_dosage').val(weight * dosage_unit);
+
+            });
     </script>
 
 
