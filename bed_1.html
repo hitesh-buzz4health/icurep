@@ -46,19 +46,20 @@
                 <li>
                     <a href="notifications.html"><i class="fa fa-bell"></i> <span class="nav-label">Notifications</span><!--  <span class="fa arrow"></span> --></a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="#"><i class="fa fa-bed"></i> <span class="nav-label">ICUs</span><span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
-                        <li><a href="medical_icu_bed_list.html">Medical ICU 1</a></li>
-                        <li><a href="medical_icu_bed_list.html">Medical ICU 2</a></li>
-                        <li><a href="medical_icu_bed_list.html">Medical ICU 3</a></li>
-                        <li><a href="medical_icu_bed_list.html">Medical ICU 4</a></li>
+                        <li class="active"><a href="medical_icu_1_bed_list.html">Medical ICU 1</a></li>
+                        <li><a href="medical_icu_2_bed_list.html">Medical ICU 2</a></li>
+                        <li><a href="medical_icu_3_bed_list.html">Medical ICU 3</a></li>
+                        <li><a href="medical_icu_4_bed_list.html">Medical ICU 4</a></li>
                        
-                        <li><a href="surgical_icu_bed_list.html">Surgical ICU 1</a></li>
-                        <li><a href="surgical_icu_bed_list.html">Surgical ICU 2</a></li>
-                        <li><a href="critical_care_icu_bed_list.html">Crticial Care ICU 1</a></li>
-                        <li><a href="critical_care_icu_bed_list.html">Crticial Care ICU 2</a></li>
-                        <li><a href="critical_care_icu_bed_list.html">Crticial Care ICU 3</a></li>
+                        <li><a href="surgical_icu_1_bed_list.html">Surgical ICU 1</a></li>
+                        <li><a href="surgical_icu_2_bed_list.html">Surgical ICU 2</a></li>
+                        
+                        <li><a href="critical_care_icu_1_bed_list.html">Crticial Care ICU 1</a></li>
+                        <li><a href="critical_care_icu_2_bed_list.html">Crticial Care ICU 2</a></li>
+                        <li><a href="critical_care_icu_3_bed_list.html">Crticial Care ICU 3</a></li>
                         
                         <li><a href="neuro_icu_bed_list.html">Neuro ICU</a></li>
                     </ul>
@@ -72,6 +73,7 @@
     </nav>
     <!-- //Side Menu -->
 
+
         <div id="page-wrapper" class="gray-bg">
         <div class="row border-bottom">
         <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
@@ -82,19 +84,26 @@
                 <li>
                     <span class="m-r-sm text-muted welcome-message">Nurse Workstation Console</span>
                 </li>
-                
-
-
                 <li>
                     <a href="login.html">
                         <i class="fa fa-sign-out"></i> Log out
                     </a>
                 </li>
-
             </ul>
 
         </nav>
         </div>
+
+        <!-- Welcome Text -->
+        <div class="row wrapper border-bottom white-bg page-heading">
+            <div class="col-lg-10">
+                <h2>Bed ID 1 (Medical ICU)</h2>
+                <ol class="breadcrumb">
+                </ol>
+            </div>
+        </div>
+        <!-- //Welcome Text -->
+
         <div class="wrapper wrapper-content">
 
             <div class="row">
@@ -102,6 +111,7 @@
                     <div class="ibox float-e-margins">
                         <div class="ibox-title">
                             <h5>Patient Weight</h5>
+                            <!-- //Dosage Calculation -->
                             <!-- <div class="pull-right">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-xs btn-white active">Today</button>
@@ -114,46 +124,70 @@
                             <div>
                                 <canvas id="lineChart" height="100%"></canvas>
                             </div>
+                            <!-- Dosage Calculation -->
+                            <div class="divider"></div>
+                                <div class="row">
+                                    <div class="col-sm-12 pull-right dosage-calculation-font">
+                                        <div class="col-sm-4 padding-none">
+                                            <div class="form-group">
+                                                <label class="control-label" for="order_id"><p>Current Patient Weight</p></label>
+                                                <input type="text" id="weight" name="order_id" value="85" placeholder="85" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4 padding-none">
+                                            <div class="form-group">
+                                                <label class="control-label" for="status"><p>Dosage Factor</p></label>
+                                                <input type="text" id="dosage" name="status" value="" placeholder="Enter Dosage Factor" class="form-control"> 
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4 padding-none">
+                                            <div class="form-group">
+                                                <label class="control-label" for="customer"><p>mg</p></label>
+                                                <input type="text" id="total_dosage" name="customer" value="" placeholder="0.0000" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                                <div class="ibox float-e-margins">
-                                    <div class="ibox-title">
-                                        <h5>Pending alerts about this bed</h5>
-                                        <div class="ibox-tools">
-                                            <a class="collapse-link">
-                                                <i class="fa fa-chevron-up"></i>
-                                            </a>
-                                            <a class="close-link">
-                                                <i class="fa fa-times"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="ibox-content">
-                                        <ul class="todo-list m-t small-list">
-                                            <li>
-                                                <a href="#" class="check-link"><i class="fa fa-check-square"></i> </a>
-                                                <span class="m-l-xs todo-completed">Change the bed position to 45&deg twice today</span>
-
-                                            </li>
-                                            <li>
-                                                <a href="#" class="check-link"><i class="fa fa-square-o"></i> </a>
-                                                <span class="m-l-xs">Take notes for patient's current weight</span>
-
-                                            </li>
-                                            <li>
-                                                <a href="#" class="check-link"><i class="fa fa-square-o"></i> </a>
-                                                <span class="m-l-xs">Update the dosage</span>
-                                                <small class="label label-primary"><i class="fa fa-clock-o"></i> 1 mins</small>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>Pending alerts about this bed</h5>
+                            <div class="ibox-tools">
+                                <a class="collapse-link">
+                                    <i class="fa fa-chevron-up"></i>
+                                </a>
+                                <a class="close-link">
+                                    <i class="fa fa-times"></i>
+                                </a>
                             </div>
+                        </div>
+                        <div class="ibox-content">
+                            <ul class="todo-list m-t small-list">
+                                <li>
+                                    <a href="#" class="check-link"><i class="fa fa-check-square"></i> </a>
+                                    <span class="m-l-xs todo-completed">Change the bed position to 45&deg twice today</span>
+
+                                </li>
+                                <li>
+                                    <a href="#" class="check-link"><i class="fa fa-square-o"></i> </a>
+                                    <span class="m-l-xs">Take notes for patient's current weight</span>
+
+                                </li>
+                                <li>
+                                    <a href="#" class="check-link"><i class="fa fa-square-o"></i> </a>
+                                    <span class="m-l-xs">Update the dosage</span>
+                                    <small class="label label-primary"><i class="fa fa-clock-o"></i> 1 mins</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- Dosage Calculation -->
-            <div class="row">
+     <!--        <div class="row">
                 <div class="col-lg-12">
                     <div class="ibox float-e-margins">
                         <div class="ibox-title">
@@ -184,7 +218,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- //Dosage Calculation -->
             <div class="row">
                 <!-- Bed Positioning Carousel -->
