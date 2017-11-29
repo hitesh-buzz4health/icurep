@@ -8584,3 +8584,11 @@ a.fill-div {
 .padding-none {
   padding: 1px;
 }
+
+.carousel-control-bed-sore {
+  width: 0px;
+}
+
+.image-bed-sore {
+  align-items: center;
+}

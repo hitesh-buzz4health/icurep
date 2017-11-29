@@ -111,6 +111,9 @@
                     <div class="ibox float-e-margins">
                         <div class="ibox-title">
                             <h5>Patient Weight</h5>
+                            <div class="pull-right">
+                                <p>Current Weight - <strong>85 Kg(s)</strong></p>
+                            </div>
                             <!-- //Dosage Calculation -->
                             <!-- <div class="pull-right">
                                 <div class="btn-group">
@@ -181,6 +184,26 @@
                                     <span class="m-l-xs">Update the dosage</span>
                                     <small class="label label-primary"><i class="fa fa-clock-o"></i> 1 mins</small>
                                 </li>
+                                <li>
+                                    <a href="#" class="check-link"><i class="fa fa-check-square"></i> </a>
+                                    <span class="m-l-xs todo-completed">Change the bed position to 45&deg twice today</span>
+
+                                </li>
+                                <li>
+                                    <a href="#" class="check-link"><i class="fa fa-square-o"></i> </a>
+                                    <span class="m-l-xs">Take notes for patient's current weight</span>
+
+                                </li>
+                                <li>
+                                    <a href="#" class="check-link"><i class="fa fa-square-o"></i> </a>
+                                    <span class="m-l-xs">Update the dosage</span>
+                                    <small class="label label-primary"><i class="fa fa-clock-o"></i> 1 mins</small>
+                                </li>
+                                <li>
+                                    <a href="#" class="check-link"><i class="fa fa-square-o"></i> </a>
+                                    <span class="m-l-xs">Update the dosage</span>
+                                    <small class="label label-primary"><i class="fa fa-clock-o"></i> 1 mins</small>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -222,170 +245,77 @@
             <!-- //Dosage Calculation -->
             <div class="row">
                 <!-- Bed Positioning Carousel -->
-                <div class="col-lg-4 col-lg-offset-1" >
+                <div class="col-lg-6" >
                     <div class="ibox">
                         <div class="ibox-title">
                            <h5>Bed Position</h5>
                         </div>
-                        <div class="slick_demo_3">
-                            <div>
-                             <div class="ibox-content align-center">
-                                            <img src="img/bed_position_large1_new.png">
-                                            <h5><strong>Today</strong></h5>
-                                            <!-- <p>Upper Back and Hands</p>                                 -->
-                            </div>
-                            </div>
-                            <div>
-                             <div class="ibox-content align-center">
-                                            <img src="img/bed_position_large2_new.png">
-                                            <h5><strong>15</strong> Nov</h5>
-                                            <!-- <p>Upper Back and Hands</p>                                 -->
-                            </div>
-                        </div>
-                            <div>
-                             <div class="ibox-content align-center">
-                                            <img src="img/bed_position_large3_new.png">
-                                            <h5><strong>16</strong> Nov</h5>
-                                            <!-- <p>Upper Back and Hands</p>                                 -->
-                            </div>
-                            </div>
-                            <div>
-                             <div class="ibox-content align-center">
-                                            <img src="img/bed_position_large4_new.png">
-                                            <h5><strong>17</strong> Nov</h5>
-                                            <!-- <p>Upper Back and Hands</p>                                 -->
-                            </div>
-                            </div>
-                            <div>
-                             <div class="ibox-content align-center">
-                                            <img src="img/bed_position_large5_new.png">
-                                            <h5><strong>18</strong> Nov</h5>
-                                            <!-- <p>Upper Back and Hands</p>                                   -->
-                            </div>
-                            </div>
-                            <div>
-                             <div class="ibox-content align-center">
-                                            <img src="img/bed_position_large6_new.png">
-                                            <h5><strong>19</strong> Nov</h5>
-                                            <!-- <p>Upper Back and Hands</p>                                   -->
-                            </div>
-                            </div>
-                            <div>
-                             <div class="ibox-content align-center">
-                                            <img src="img/bed_position_large7_new.png">
-                                            <h5><strong>20</strong> Nov</h5>
-                                            <!-- <p>Upper Back and Hands</p>                                 -->
-                            </div>
-                            </div>
-                            <div>
-                             <div class="ibox-content align-center">
-                                            <img src="img/bed_position_large8_new.png">
-                                            <h5><strong>21</strong> Nov</h5>
-                                            <!-- <p>Upper Back and Hands</p>                                 -->
-                            </div>
-                            </div>
-                            <div>
-                             <div class="ibox-content align-center">
-                                            <img src="img/bed_position_large9_new.png">
-                                            <h5><strong>22</strong> Nov</h5>
-                                            <!-- <p>Upper Back and Hands</p>                                 -->
-                            </div>
-                            </div>
-                            <div>
-                             <div class="ibox-content align-center">
-                                            <img src="img/bed_position_large10_new.png">
-                                            <h5><strong>23</strong> Nov</h5>
-                                            <!-- <p>Upper Back and Hands</p>                               -->
-                            </div>
-                            </div>
+                        <div class="ibox-content align-center">
+                            <div class="carousel slide" id="carousel1">
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <img alt="image" class="img-responsive" src="img/bed_position_large1_new.png">
+                                        <h3>Today</h3>
+                                    </div>
+                                    <div class="item">
+                                        <img alt="image"  class="img-responsive" src="img/bed_position_large2_new.png">
+                                        <h3>Yesterday</h3>
+                                    </div>
 
+                                    <div class="item ">
+                                        <img alt="image" class="img-responsive" src="img/bed_position_large3_new.png">
+                                        <h3>Day before yesterday</h3>
+                                    </div>
+
+                                </div>
+                                <a data-slide="prev" href="#carousel1" class="left carousel-control carousel-control-bed-sore">
+                                    <span class="icon-prev"></span>
+                                </a>
+                                <a data-slide="next" href="#carousel1" class="right carousel-control carousel-control-bed-sore">
+                                    <span class="icon-next"></span>
+                                </a>
+                            </div>
                         </div>
-                    </div>
                 </div>
+            </div>
 
             <!-- //Bed Positioning Carousel -->
-            <!-- Thermal Carousel -->
-                <div class="col-lg-4 col-lg-offset-1" >
+            <!-- Bed Sore Prevention -->
+                <div class="col-lg-6" >
                     <div class="ibox">
                         <div class="ibox-title">
                            <h5>Bed Sore Prevention</h5>
                         </div>
-                        <div class="slick_demo_3">
-                            <div>
-                             <div class="ibox-content align-center">
-                                            <img src="img/thermal_image_1_large1.png">
-                                            <h5><strong>Today</strong></h5>
-                                            <!-- <p>Upper Back and Hands</p>                                 -->
-                            </div>
-                            </div>
-                            <div>
-                             <div class="ibox-content align-center">
-                                            <img src="img/thermal_image_1_large2.png">
-                                            <h5><strong>15</strong> Nov</h5>
-                                            <!-- <p>Upper Back and Hands</p>                                 -->
-                            </div>
-                        </div>
-                            <div>
-                             <div class="ibox-content align-center">
-                                            <img src="img/thermal_image_1_large3.png">
-                                            <h5><strong>16</strong> Nov</h5>
-                                            <!-- <p>Upper Back and Hands</p>                                 -->
-                            </div>
-                            </div>
-                            <div>
-                             <div class="ibox-content align-center">
-                                            <img src="img/thermal_image_1_large4.png">
-                                            <h5><strong>17</strong> Nov</h5>
-                                            <!-- <p>Upper Back and Hands</p>                                 -->
-                            </div>
-                            </div>
-                            <div>
-                             <div class="ibox-content align-center">
-                                            <img src="img/thermal_image_1_large5.png">
-                                            <h5><strong>18</strong> Nov</h5>
-                                            <!-- <p>Upper Back and Hands</p>                                   -->
-                            </div>
-                            </div>
-                            <div>
-                             <div class="ibox-content align-center">
-                                            <img src="img/thermal_image_1_large6.png">
-                                            <h5><strong>19</strong> Nov</h5>
-                                            <!-- <p>Upper Back and Hands</p>                                   -->
-                            </div>
-                            </div>
-                            <div>
-                             <div class="ibox-content align-center">
-                                            <img src="img/thermal_image_1_large7.png">
-                                            <h5><strong>20</strong> Nov</h5>
-                                            <!-- <p>Upper Back and Hands</p>                                 -->
-                            </div>
-                            </div>
-                            <div>
-                             <div class="ibox-content align-center">
-                                            <img src="img/thermal_image_1_large8.png">
-                                            <h5><strong>21</strong> Nov</h5>
-                                            <!-- <p>Upper Back and Hands</p>                                 -->
-                            </div>
-                            </div>
-                            <div>
-                             <div class="ibox-content align-center">
-                                            <img src="img/thermal_image_1_large9.png">
-                                            <h5><strong>22</strong> Nov</h5>
-                                            <!-- <p>Upper Back and Hands</p>                                 -->
-                            </div>
-                            </div>
-                            <div>
-                             <div class="ibox-content align-center">
-                                            <img src="img/thermal_image_1_large10.png">
-                                            <h5><strong>23</strong> Nov</h5>
-                                            <!-- <p>Upper Back and Hands</p>                               -->
-                            </div>
+                        <div class="ibox-content align-center">
+                            <div class="carousel slide" id="carousel1">
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <img alt="image" class="img-responsive" src="img/thermal_image_1_large1.png">
+                                        <h3>Today</h3>
+                                    </div>
+                                    <div class="item">
+                                        <img alt="image"  class="img-responsive" src="img/thermal_image_1_large2.png">
+                                        <h3>Yesterday</h3>
+                                    </div>
+
+                                    <div class="item ">
+                                        <img alt="image" class="img-responsive" src="img/thermal_image_1_large3.png">
+                                        <h3>Day before yesterday</h3>
+                                    </div>
+
+                                </div>
+                                <a data-slide="prev" href="#carousel1" class="left carousel-control carousel-control-bed-sore">
+                                    <span class="icon-prev"></span>
+                                </a>
+                                <a data-slide="next" href="#carousel1" class="right carousel-control carousel-control-bed-sore">
+                                    <span class="icon-next"></span>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-            <!-- //Thermal Carousel -->
+            <!-- //Bed Sore Prevention -->
             </div>
         </div>
         <div class="footer">
