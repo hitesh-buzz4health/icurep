@@ -1,11 +1,11 @@
 $(function () {
 
     var lineData = {
-        labels: ["16th Nov 6PM", "17th Nov 6PM", "18th Nov 6PM", "19th Nov 6PM", "20th Nov 6PM", "21st Nov 6PM", "22nd Nov 6PM","23rd Nov 6PM", "24th Nov 6PM", "25th Nov 6PM", "26th Nov 6PM", "27th Nov 6PM", "28th Nov 6PM", "29th Nov 6PM"],
+        labels: ["16th", "17th", "18th", "19th", "20th", "21st", "22nd","23rd", "24th", "25th", "26th", "27th", "28th", "29th"],
         datasets: [
 
             {
-                label: "Patient Weight (Kg)",
+                label: "Patient Weight (in Kg)",
                 backgroundColor: 'rgba(26,179,148,0.5)',
                 borderColor: "rgba(26,179,148,0.7)",
                 pointBackgroundColor: "rgba(26,179,148,1)",
