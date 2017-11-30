@@ -8575,3 +8575,20 @@ a.fill-div {
 .align-center img {
   display: -webkit-inline-box;
 }
+
+.dosage-calculation-font p{
+  font-size: 8px;
+  text-align: center;
+}
+
+.padding-none {
+  padding: 1px;
+}
+
+.carousel-control-bed-sore {
+  width: 0px;
+}
+
+.image-bed-sore {
+  align-items: center;
+}

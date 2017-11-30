@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>ICU App</title>
+    <title>Medical ICU 1 Beds</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -44,13 +44,13 @@
                 </li>
                 <!-- //Profile -->
 
-                <li class="active">
+                <li>
                     <a href="notifications.html"><i class="fa fa-bell"></i> <span class="nav-label">Notifications</span><!--  <span class="fa arrow"></span> --></a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="#"><i class="fa fa-bed"></i> <span class="nav-label">ICUs</span><span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
-                        <li><a href="medical_icu_1_bed_list.html">Medical ICU 1</a></li>
+                        <li class="active"><a href="medical_icu_1_bed_list.html">Medical ICU 1</a></li>
                         <li><a href="medical_icu_2_bed_list.html">Medical ICU 2</a></li>
                         <li><a href="medical_icu_3_bed_list.html">Medical ICU 3</a></li>
                         <li><a href="medical_icu_4_bed_list.html">Medical ICU 4</a></li>
@@ -84,9 +84,7 @@
                 <li>
                     <span class="m-r-sm text-muted welcome-message">Nurse Workstation Console</span>
                 </li>
-               
-               
-
+                
 
                 <li>
                     <a href="login.html">
@@ -98,112 +96,362 @@
 
         </nav>
         </div>
-<!-- Welcome Text -->
+
+<!-- Heading -->
         <div class="row wrapper border-bottom white-bg page-heading">
             <div class="col-lg-10">
-                <h2>Welcome to the ICU App</h2>
-                <ol class="breadcrumb">
+                <h2>Medical ICU 1</h2>
+                <!-- <ol class="breadcrumb">
                     <li>
-                        <i><a href="index.html">Filter Notifications</a></i>
+                        <a href="index.html">Some tagline...</a>
                     </li>
-                    <!-- <li>
+                    <li>
                         <a>UI Elements</a>
                     </li>
                     <li class="active">
                         <strong>Typography</strong>
-                    </li> -->
-                </ol>
-
-                <button type="button" class="btn btn-outline btn-primary">Nurse Suresh</button>
-                <button type="button" class="btn btn-outline btn-primary">Nurse Sushma</button>
-                <button type="button" class="btn btn-outline btn-primary">Nurse Kapil</button>
-                <button type="button" class="btn btn-outline btn-primary">Nurse Poonam</button>
-                <button type="button" class="btn btn-outline btn-primary">Nurse Sandeep</button>
+                    </li>
+                </ol> -->
             </div>
             <div class="col-lg-2">
 
             </div>
         </div>
-<!-- //Welcome Text -->
-<div class="wrapper wrapper-content">
-    <div class="row">
-        <div class="col-lg-12">
+
+<!-- //Heading -->
+        <!-- Bed List -->
+        <div class="wrapper wrapper-content animated fadeInRight">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="ibox float-e-margins">
-                        <div class="ibox-title">
-                            <h5>Your Pending Tasks</h5>
-                            <div class="ibox-tools">
-                                <a class="collapse-link">
-                                    <i class="fa fa-chevron-up"></i>
-                                </a>
-                                <a class="close-link">
-                                    <i class="fa fa-times"></i>
-                                </a>
+                    <!-- Notification  -->
+                    <div class="col-lg-12">  
+                        <div class="ibox">
+                            <div class="ibox-title">
+                                <h5>Bed ID 1</h5>
+                                <div class="ibox-tools">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <i class="fa fa-bell text-danger"></i>
+                                        <span class="label label-danger pull-right">3</span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                     <li>
+                                        <a href="#">
+                                            <div>
+                                                <i class="fa fa-envelope fa-fw"></i> You have 1 new message from Dr. Sushma.
+                                                <span class="pull-right text-muted small">4 minutes ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="#">
+                                            <div>
+                                                <i class="fa fa-twitter fa-wheelchair"></i> Change the bed position to 90&deg
+                                                <span class="pull-right text-muted small">12 minutes ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="#">
+                                            <div>
+                                                <i class="fa fa-wheelchair"></i> It's been 4 hours since you last changed the bed position.
+                                                <span class="pull-right text-muted small">4 hours ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <div class="text-center link-block">
+                                            <a href="notifications.html">
+                                                <strong>See All Alerts</strong>
+                                                <i class="fa fa-angle-right"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            </div>
+                            <div class="ibox-content"  onclick="location.href='./bed_1.html';" style="cursor: pointer;">
+                                <div class="row m-t-lg align-center">
+                                    <div class="col-md-4">
+                                        <!-- <span class="fa fa-wheelchair text-navy"></span> -->
+                                        <img src="img/bed_position_4.png">
+                                        <h5><strong>Bed</strong> Positioning (Adherence)</h5>
+                                        <h2 class="font-bold text-danger">Less than 50%</h2>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/thermal_image_1.png">
+                                        <!-- <span class="line">5,3,9,6,5,9,7,3,5,2</span> -->
+                                        <h5><strong>Bed</strong> Sore</h5>
+                                        <h2 class="font-bold text-danger">Deteriorating <i class="fa fa-level-down"></i></h2>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/pt_weight.png">
+                                        <!-- <span class="bar">5,3,2,-1,-3,-2,2,3,5,2</span> -->
+                                        <h5><strong>Patient</strong> Weight</h5>
+                                        <h2>85 Kgs</h2>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="ibox-content">
-                            <table class="table table-hover no-margins">
-                                <thead>
-                                    <tr>
-                                        <th>Status</th>
-                                        <th>Task</th>
-                                        <th>From</th>
-                                        <th>Assigned to</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><small>Pending...</small></td>
-                                        <td>Set Patient 1 bed position at 45&deg</td>
-                                        <td>Dr. Monica</td>
-                                        <td class="text-navy">Nurse Suresh</td>
-                                    </tr>
-                                    <tr>
-                                        <td><span class="label label-danger">Critical</span> </td>
-                                        <td>Set Patient 1 bed position at 45&deg</td>
-                                        <td>Dr. Monica</td>
-                                        <td class="text-navy">Nurse Suresh</td>
-                                    </tr>
-                                    <tr>
-                                        <td><small>Pending...</small> </td>
-                                        <td>Set Patient 1 bed position at 45&deg</td>
-                                        <td>Dr. Monica</td>
-                                        <td class="text-navy">Nurse Suresh</td>
-                                    </tr>
-                                    <tr>
-                                        <td><small>Pending...</small> </td>
-                                        <td>Set Patient 1 bed position at 45&deg</td>
-                                        <td>Dr. Monica</td>
-                                        <td class="text-navy">Nurse Suresh</td>
-                                    </tr>
-                                    <tr>
-                                        <td><small>Pending...</small> </td>
-                                        <td>Set Patient 1 bed position at 45&deg</td>
-                                        <td>Dr. Monica</td>
-                                        <td class="text-navy">Nurse Suresh</td>
-                                    </tr>
-                                    <tr>
-                                        <td><span class="label label-success">Completed</span> </td>
-                                        <td>Set Patient 1 bed position at 45&deg</td>
-                                        <td>Dr. Monica</td>
-                                        <td class="text-navy">Nurse Suresh</td>
-                                    </tr>
-                                    <tr>
-                                        <td><small>Pending...</small> </td>
-                                        <td>Set Patient 1 bed position at 45&deg</td>
-                                        <td>Dr. Monica</td>
-                                        <td class="text-navy">Nurse Suresh</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                    </div>  
+                    <!-- //Notification -->
+                    <!-- No notification -->
+                    <div class="col-lg-12">  
+                        <div class="ibox">
+                            <div class="ibox-title">
+                                <h5>Bed ID 2</h5>
+                                <div class="ibox-tools">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <i class="fa fa-bell"></i>
+                                        <!-- <span class="label label-danger pull-right">3</span> -->
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <div class="text-center link-block">
+                                            <a href="#">
+                                                <strong>No Pending Alerts</strong>
+                                            </a>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="ibox-content"  onclick="location.href='./bed_1.html';" style="cursor: pointer;">
+                                <div class="row m-t-lg align-center">
+                                    <div class="col-md-4">
+                                        <!-- <span class="fa fa-wheelchair text-navy"></span> -->
+                                        <img src="img/bed_position_2.png">
+                                        <h5><strong>Bed</strong> Positioning (Adherence)</h5>
+                                        <h2 class="font-bold text-navy">More than 50%</h2>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/thermal_image_2.png">
+                                        <!-- <span class="line">5,3,9,6,5,9,7,3,5,2</span> -->
+                                        <h5><strong>Bed</strong> Sore</h5>
+                                        <h2 class="font-bold text-navy">Improving <i class="fa fa-level-up"></i></h2>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/pt_weight.png">
+                                        <h5><strong>Patient</strong> Weight</h5>
+                                        <h2>78 Kgs</h2>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    </div>  
+                    <!-- //No notification -->
+                    <!-- No notification -->
+                    <div class="col-lg-12">  
+                        <div class="ibox">
+                            <div class="ibox-title">
+                                <h5>Bed ID 3</h5>
+                                <div class="ibox-tools">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <i class="fa fa-bell"></i>
+                                        <!-- <span class="label label-danger pull-right">3</span> -->
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <div class="text-center link-block">
+                                            <a href="#">
+                                                <strong>No Pending Alerts</strong>
+                                            </a>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="ibox-content"  onclick="location.href='./bed_1.html';" style="cursor: pointer;">
+                                <div class="row m-t-lg align-center">
+                                    <div class="col-md-4">
+                                        <!-- <span class="fa fa-wheelchair text-navy"></span> -->
+                                        <img src="img/bed_position_3.png">
+                                        <h5><strong>Bed</strong> Positioning (Adherence)</h5>
+                                        <h2 class="font-bold text-warning">Between 50 - 80%</h2>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/bed_sore_3.png">
+                                        <!-- <span class="line">5,3,9,6,5,9,7,3,5,2</span> -->
+                                        <h5><strong>Bed</strong> Sore</h5>
+                                        <h2 class="font-bold text-navy">Improving <i class="fa fa-level-up"></i></h2>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/pt_weight.png">
+                                        <!-- <span class="bar">5,3,2,-1,-3,-2,2,3,5,2</span> -->
+                                        <h5><strong>Patient</strong> Weight</h5>
+                                        <h2>75 Kgs</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                    <!-- //No notification -->
+                    <!-- Noification   -->
+                    <div class="col-lg-12">  
+                        <div class="ibox">
+                            <div class="ibox-title">
+                                <h5>Bed ID 4</h5>
+                                <div class="ibox-tools">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <i class="fa fa-bell text-danger"></i>
+                                        <span class="label label-danger pull-right">3</span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                     <li>
+                                        <a href="#">
+                                            <div>
+                                                <i class="fa fa-envelope fa-fw"></i> You have 1 new message from Dr. Sushma.
+                                                <span class="pull-right text-muted small">4 minutes ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="#">
+                                            <div>
+                                                <i class="fa fa-twitter fa-wheelchair"></i> Change the bed position to 90&deg
+                                                <span class="pull-right text-muted small">12 minutes ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="#">
+                                            <div>
+                                                <i class="fa fa-wheelchair"></i> It's been 4 hours since you last changed the bed position.
+                                                <span class="pull-right text-muted small">4 hours ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <div class="text-center link-block">
+                                            <a href="notifications.html">
+                                                <strong>See All Alerts</strong>
+                                                <i class="fa fa-angle-right"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            </div>
+                            <div class="ibox-content"  onclick="location.href='./bed_1.html';" style="cursor: pointer;">
+                                <div class="row m-t-lg align-center">
+                                    <div class="col-md-4">
+                                        <!-- <span class="fa fa-wheelchair text-navy"></span> -->
+                                        <img src="img/bed_position_4.png">
+                                        <h5><strong>Bed</strong> Positioning (Adherence)</h5>
+                                        <h2 class="font-bold text-danger">Less than 30%</h2>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/bed_sore_4.png">
+                                        <!-- <span class="line">5,3,9,6,5,9,7,3,5,2</span> -->
+                                        <h5><strong>Bed</strong> Sore</h5>
+                                        <h2 class="font-bold text-danger">Deteriorating <i class="fa fa-level-down"></i></h2>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/pt_weight.png">
+                                        <!-- <span class="bar">5,3,2,-1,-3,-2,2,3,5,2</span> -->
+                                        <h5><strong>Patient</strong> Weight</h5>
+                                        <h2>48 Kgs</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                    <!-- //Notification -->
+                    <!-- No notification -->
+                    <div class="col-lg-12">  
+                        <div class="ibox">
+                            <div class="ibox-title">
+                                <h5>Bed ID 5</h5>
+                                <div class="ibox-tools">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <i class="fa fa-bell"></i>
+                                        <!-- <span class="label label-danger pull-right">3</span> -->
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <div class="text-center link-block">
+                                            <a href="#">
+                                                <strong>No Pending Alerts</strong>
+                                            </a>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="ibox-content"  onclick="location.href='./bed_1.html';" style="cursor: pointer;">
+                                <div class="row m-t-lg align-center">
+                                    <div class="col-md-4">
+                                        <!-- <span class="fa fa-wheelchair text-navy"></span> -->
+                                        <img src="img/bed_position_1.png">
+                                        <h5><strong>Bed</strong> Positioning (Adherence)</h5>
+                                        <h2 class="font-bold text-danger">Less than 50%</h2>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/bed_sore_5.png">
+                                        <!-- <span class="line">5,3,9,6,5,9,7,3,5,2</span> -->
+                                        <h5><strong>Bed</strong> Sore</h5>
+                                        <h2 class="font-bold text-navy">Improving <i class="fa fa-level-up"></i></h2>
+                                        </div>
+                                    <div class="col-md-4">
+                                        <img src="img/pt_weight.png">
+                                        <!-- <span class="bar">5,3,2,-1,-3,-2,2,3,5,2</span> -->
+                                        <h5><strong>Patient</strong> Weight</h5>
+                                        <h2>64 Kgs</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                    <!-- //No notification -->  
+                    <!-- No notification -->
+                    <div class="col-lg-12">  
+                        <div class="ibox">
+                            <div class="ibox-title">
+                                <h5>Bed ID 6</h5>
+                                <div class="ibox-tools">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <i class="fa fa-bell"></i>
+                                        <!-- <span class="label label-danger pull-right">3</span> -->
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <div class="text-center link-block">
+                                            <a href="#">
+                                                <strong>No Pending Alerts</strong>
+                                            </a>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="ibox-content"  onclick="location.href='./bed_1.html';" style="cursor: pointer;">
+                                <div class="row m-t-lg align-center">
+                                    <div class="col-md-4" >
+                                        <!-- <span class="fa fa-wheelchair text-navy"></span> -->
+                                        <img src="img/bed_position_3.png">
+                                        <h5><strong>Bed</strong> Positioning (Adherence)</h5>
+                                        <h2 class="font-bold text-navy">More than 50%</h2>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/bed_sore_6.png">
+                                        <!-- <span class="line">5,3,9,6,5,9,7,3,5,2</span> -->
+                                        <h5><strong>Bed</strong> Sore</h5>
+                                        <h2 class="font-bold text-navy">Improving <i class="fa fa-level-up"></i></h2>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="img/pt_weight.png">
+                                        <!-- <span class="bar">5,3,2,-1,-3,-2,2,3,5,2</span> -->
+                                        <h5><strong>Patient</strong> Weight</h5>
+                                        <h2>79 Kgs</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                    <!-- //No notification -->    
                 </div>
             </div>
         </div>
-    </div>
-</div>
+        <!-- //Bed List -->
+
+
         <div class="footer">
 
         </div>
