@@ -1,7 +1,7 @@
 $(function () {
 
     var lineData = {
-        labels: ["16th", "17th", "18th", "19th", "20th", "21st", "22nd","23rd", "24th", "25th", "26th", "27th", "28th", "29th"],
+        labels: ["0", "16th", "17th", "18th", "19th", "20th", "21st", "22nd","23rd", "24th", "25th", "26th", "27th", "28th", "29th"],
         datasets: [
 
             {
@@ -10,7 +10,7 @@ $(function () {
                 borderColor: "rgba(26,179,148,0.7)",
                 pointBackgroundColor: "rgba(26,179,148,1)",
                 pointBorderColor: "#fff",
-                data: [42, 43, 44, 50, 46, 40, 42, 50, 52, 55, 60, 65, 75, 85,50]
+                data: [0, 42, 43, 44, 50, 46, 40, 42, 50, 52, 55, 60, 65, 75, 85,50]
             }
             // ,{
             //     label: "Expected Weight",
