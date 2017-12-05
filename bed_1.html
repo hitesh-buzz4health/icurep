@@ -14,6 +14,9 @@
     <link href="css/plugins/slick/slick-theme.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/plugins/ionRangeSlider/ion.rangeSlider.css" rel="stylesheet">
+    <link href="css/plugins/ionRangeSlider/ion.rangeSlider.skinFlat.css" rel="stylesheet">
+
 
 </head>
 
@@ -46,9 +49,10 @@
                 <li>
                     <a href="notifications.html"><i class="fa fa-bell"></i> <span class="nav-label">Notifications</span><!--  <span class="fa arrow"></span> --></a>
                 </li>
-                <li class="active">
+                <li>
                     <a href="#"><i class="fa fa-bed"></i> <span class="nav-label">ICUs</span><span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
+
                         <li class="active"><a href="medical_icu_1_bed_list.html">Medical ICU 1</a></li>
                         <li><a href="medical_icu_2_bed_list.html">Medical ICU 2</a></li>
                         <li><a href="medical_icu_3_bed_list.html">Medical ICU 3</a></li>
@@ -244,197 +248,66 @@
             </div> -->
             <!-- //Dosage Calculation -->
             <div class="row">
-                <!-- Bed Positioning Carousel -->
-                <div class="col-lg-6" >
-                    <div class="ibox">
-                        <div class="ibox-title">
-                           <h5>Bed Position</h5>
-                           <span class="label label-danger pull-right">Prescribed</span>
-                           <span class="label label-info pull-right">Actual</span>
-                        </div>
-                        <div class="ibox-content align-center">
-                            <div class="carousel slide" id="carousel1">
+                <div class="col-lg-6">
+                   <div class="ibox">
+                    <div class="ibox-title">
+                     <h5>Bed Sore Prevention</h5>
+                 </div>
+                                        <div class="ibox-content align-center">
+                            <div class="carousel slide" id="carousela">
                                 <div class="carousel-inner">
                                     <!-- Today -->
                                     <div class="item active">
-                                        <img alt="image" class="img-responsive" src="img/bed_position_large1_new.png">
-                                        <h3>Today</h3>
-                                        <small>12 PM up till now</small>
+                                        <img class="bed_sore_image" src="./img/thermal_image_1_large.png"/>
+                                            <div class="bed_sore_slider"></div>
+                                                            <h3>Today</h3>
+                                        
                                     </div>
-                                    <!-- //Today -->
-                                    <!-- Yesterday -->
-                                    <div class="item">
-                                        <img alt="image"  class="img-responsive" src="img/bed_position_large2_new.png">
-                                        <h3>Yesterday</h3>
-                                        <small>Between 12 AM to 2 AM</small>
+                               <div class="item ">
+                                        <img class="bed_sore_image" src="./img/thermal_image_1_large.png"/>
+                                            <div class="bed_sore_slider"></div>
+                                                            <h3>Yesterday</h3>
+                                        
                                     </div>
-                                    <div class="item">
-                                        <img alt="image"  class="img-responsive" src="img/bed_position_large3_new.png">
-                                        <h3>Yesterday</h3>
-                                        <small>Between 2 AM to 6 AM</small>
-                                    </div>
-                                    <div class="item">
-                                        <img alt="image"  class="img-responsive" src="img/bed_position_large4_new.png">
-                                        <h3>Yesterday</h3>
-                                        <small>Between 6 AM to 11 AM</small>
-                                    </div>
-                                    <div class="item">
-                                        <img alt="image"  class="img-responsive" src="img/bed_position_large5_new.png">
-                                        <h3>Yesterday</h3>
-                                        <small>Between 11 AM to 12 AM</small>
-                                    </div>
-                                    <div class="item">
-                                        <img alt="image"  class="img-responsive" src="img/bed_position_large6_new.png">
-                                        <h3>Yesterday</h3>
-                                        <small>Between 12 AM to 4 PM</small>
-                                    </div>
-                                    <div class="item">
-                                        <img alt="image"  class="img-responsive" src="img/bed_position_large7_new.png">
-                                        <h3>Yesterday</h3>
-                                        <small>Between 4 PM to 6 PM</small>
-                                    </div>
-                                    <div class="item">
-                                        <img alt="image"  class="img-responsive" src="img/bed_position_large8_new.png">
-                                        <h3>Yesterday</h3>
-                                        <small>Between 6 PM to 6:30 PM</small>
-                                    </div>
-                                    <div class="item">
-                                        <img alt="image"  class="img-responsive" src="img/bed_position_large9_new.png">
-                                        <h3>Yesterday</h3>
-                                        <small>Between 6:30 PM to 8 PM</small>
-                                    </div>
-                                    <div class="item">
-                                        <img alt="image"  class="img-responsive" src="img/bed_position_large10_new.png">
-                                        <h3>Yesterday</h3>
-                                        <small>Between 8 PM to 9 PM</small>
-                                    </div>
-                                    <div class="item">
-                                        <img alt="image"  class="img-responsive" src="img/bed_position_large1_new.png">
-                                        <h3>Yesterday</h3>
-                                        <small>Between 9 PM to 12 AM</small>
-                                    </div>
-                                    <!-- //Yesterday -->
-                                    <!-- Day before yesterday -->
-                                    <div class="item">
-                                        <img alt="image" class="img-responsive" src="img/bed_position_large3_new.png">
-                                        <h3>28th Nov</h3>
-                                        <small>Between 12 AM to 5:30 AM</small>
-                                    </div>
-                                    <div class="item">
-                                        <img alt="image" class="img-responsive" src="img/bed_position_large3_new.png">
-                                        <h3>28th Nov</h3>
-                                        <small>Between 5:30 AM to 11 AM</small>
-                                    </div>
-                                    <div class="item">
-                                        <img alt="image" class="img-responsive" src="img/bed_position_large3_new.png">
-                                        <h3>28th Nov</h3>
-                                        <small>Between 11 AM to 2 PM</small>
-                                    </div>
-                                    <div class="item">
-                                        <img alt="image" class="img-responsive" src="img/bed_position_large3_new.png">
-                                        <h3>28th Nov</h3>
-                                        <small>Between 2 PM to 2:30 PM</small>
-                                    </div>
-                                    <div class="item">
-                                        <img alt="image" class="img-responsive" src="img/bed_position_large3_new.png">
-                                        <h3>28th Nov</h3>
-                                        <small>Between 2 PM to 6:30 PM</small>
-                                    </div>
-                                    <div class="item">
-                                        <img alt="image" class="img-responsive" src="img/bed_position_large3_new.png">
-                                        <h3>28th Nov</h3>
-                                        <small>Between 6:30 PM to 8:45 PM</small>
-                                    </div>
-                                    <div class="item">
-                                        <img alt="image" class="img-responsive" src="img/bed_position_large3_new.png">
-                                        <h3>28th Nov</h3>
-                                        <small>Between 8:45 PM to 12 AM</small>
-                                    </div>
-                                    <!-- //Day before yesterday -->
+                                    
 
                                 </div>
-                                <a data-slide="prev" href="#carousel1" class="left carousel-control carousel-control-bed-sore">
+                                <a data-slide="prev" href="#carousela" class="left carousel-control carousel-control-bed-sore">
                                     <span class="icon-prev"></span>
                                 </a>
-                                <a data-slide="next" href="#carousel1" class="right carousel-control carousel-control-bed-sore">
+                                <a data-slide="next" href="#carousela" class="right carousel-control carousel-control-bed-sore">
                                     <span class="icon-next"></span>
                                 </a>
                             </div>
                         </div>
+                        </div>
                 </div>
-            </div>
-
             <!-- //Bed Positioning Carousel -->
             <!-- Bed Sore Prevention -->
                 <div class="col-lg-6" >
                     <div class="ibox">
                         <div class="ibox-title">
-                           <h5>Bed Sore Prevention</h5>
+                           <h5>Bed Positioning</h5>
+                            <span class="label label-danger pull-right">Prescribed</span>
+                           <span class="label label-info pull-right">Actual</span>
                         </div>
                         <div class="ibox-content align-center">
                             <div class="carousel slide" id="carousel2">
                                 <div class="carousel-inner">
                                     <!-- Today -->
                                     <div class="item active">
-                                        <img alt="image" class="img-responsive" src="img/thermal_image_1_large1.png">
-                                        <h3>Today</h3>
-                                        <small>From 12 PM till now </small>
+                                        <img class="bed_pos_image" src="./img/bed_position_large1_new.png"/>
+                                            <div class="bed_pos_slider"></div>
+                                                            <h3>Today</h3>
+                                        
                                     </div>
-                                    <!-- //Today -->
-                                    <!-- Yesterday -->
-                                    <div class="item">
-                                        <img alt="image"  class="img-responsive" src="img/thermal_image_1_large2.png">
-                                        <h3>Yesterday</h3>
-                                        <small>12 AM to 3 PM</small>
+                               <div class="item ">
+                                        <img class="bed_pos_image" src="./img/bed_position_large1_new.png"/>
+                                            <div class="bed_pos_slider"></div>
+                                                            <h3>Yesterday</h3>
+                                        
                                     </div>
-                                    <div class="item">
-                                        <img alt="image"  class="img-responsive" src="img/thermal_image_1_large3.png">
-                                        <h3>Yesterday</h3>
-                                        <small>3 PM to 6 PM</small>
-                                    </div>
-                                    <div class="item">
-                                        <img alt="image"  class="img-responsive" src="img/thermal_image_1_large4.png">
-                                        <h3>Yesterday</h3>
-                                        <small>6 PM to 7 PM</small>
-                                    </div>
-                                    <div class="item">
-                                        <img alt="image"  class="img-responsive" src="img/thermal_image_1_large5.png">
-                                        <h3>Yesterday</h3>
-                                        <small>7 PM to 8 PM</small>
-                                    </div>
-                                    <div class="item">
-                                        <img alt="image"  class="img-responsive" src="img/thermal_image_1_large6.png">
-                                        <h3>Yesterday</h3>
-                                        <small>8 PM to 12 AM</small>
-                                    </div>
-                                    <!-- //Yesterday -->
-                                    <!-- Day before yesterday -->
-                                    <div class="item">
-                                        <img alt="image"  class="img-responsive" src="img/thermal_image_1_large7.png">
-                                        <h3>Yesterday</h3>
-                                        <small>12 AM to 3 PM</small>
-                                    </div>
-                                    <div class="item">
-                                        <img alt="image"  class="img-responsive" src="img/thermal_image_1_large8.png">
-                                        <h3>Yesterday</h3>
-                                        <small>3 PM to 6 PM</small>
-                                    </div>
-                                    <div class="item">
-                                        <img alt="image"  class="img-responsive" src="img/thermal_image_1_large9.png">
-                                        <h3>Yesterday</h3>
-                                        <small>6 PM to 7 PM</small>
-                                    </div>
-                                    <div class="item">
-                                        <img alt="image"  class="img-responsive" src="img/thermal_image_1_large10.png">
-                                        <h3>Yesterday</h3>
-                                        <small>7 PM to 8 PM</small>
-                                    </div>
-                                    <div class="item">
-                                        <img alt="image"  class="img-responsive" src="img/thermal_image_1_large2.png">
-                                        <h3>Yesterday</h3>
-                                        <small>8 PM to 12 AM</small>
-                                    </div>
-                                    <!-- //Day before yesterday -->
+                                    
 
                                 </div>
                                 <a data-slide="prev" href="#carousel2" class="left carousel-control carousel-control-bed-sore">
@@ -447,6 +320,7 @@
                         </div>
                     </div>
                 </div>
+
 
             <!-- //Bed Sore Prevention -->
             </div>
@@ -879,6 +753,12 @@
     <!-- slick carousel-->
     <script src="js/plugins/slick/slick.min.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.3/moment-with-locales.min.js"></script>
+
+    <!-- IonRangeSlider -->
+    <script src="js/plugins/ionRangeSlider/ion.rangeSlider.min.js"></script>
+
+
 
     <script>
         $(document).ready(function() {
@@ -1067,6 +947,76 @@
                 $('#total_dosage').val(weight * dosage_unit);
 
             });
+                $(".bed_pos_slider").ionRangeSlider({
+                      values: [
+                "Midnight", "12:30 am", "01:00 am",
+                "01:30 am", "02:00am", "02:30am",
+                "03:00 am", "03:30am",
+                "04:00 am", "04:30am",
+                "05:00 am", "05:30am",
+                 "06:00 am", "06:30am",
+                "07:00 am", "07:30am",
+                "08:00 am", "08:30am",
+                  "09:00 am", "09:30am",
+                "10:00 am", "10:30am",
+                "11:00 am", "11:30am",
+                  "Noon", "12:30pm",
+                "01:00 pm", "01:30pm",
+                "02:00 pm", "02:30pm",
+                  "03:00 pm", "03:30pm",
+                "04:00 pm", "04:30pm",
+                "05:00 pm", "05:30pm",
+                "06:00 pm", "06:30pm",
+                "07:00 pm", "07:30pm",
+                  "08:00 pm", "08:30pm",
+                "09:00 pm", "09:30pm",
+                "10:00 pm", "10:30pm",
+                        "11:00 pm", "11:30pm"
+
+                    ],
+            type: 'single',
+            hasGrid: true,
+                     onChange: function (data) {
+                        var file_name = "./img/bed_position_large" + data.fromNumber%10 + "_new" + ".png";
+                        console.log(data.fromNumber);
+                        $(".bed_pos_image").attr("src",file_name);
+                            }
+                });
+                  $(".bed_sore_slider").ionRangeSlider({
+                      values: [
+                "Midnight", "12:30 am", "01:00 am",
+                "01:30 am", "02:00am", "02:30am",
+                "03:00 am", "03:30am",
+                "04:00 am", "04:30am",
+                "05:00 am", "05:30am",
+                 "06:00 am", "06:30am",
+                "07:00 am", "07:30am",
+                "08:00 am", "08:30am",
+                  "09:00 am", "09:30am",
+                "10:00 am", "10:30am",
+                "11:00 am", "11:30am",
+                  "Noon", "12:30pm",
+                "01:00 pm", "01:30pm",
+                "02:00 pm", "02:30pm",
+                  "03:00 pm", "03:30pm",
+                "04:00 pm", "04:30pm",
+                "05:00 pm", "05:30pm",
+                "06:00 pm", "06:30pm",
+                "07:00 pm", "07:30pm",
+                  "08:00 pm", "08:30pm",
+                "09:00 pm", "09:30pm",
+                "10:00 pm", "10:30pm",
+                        "11:00 pm", "11:30pm"
+
+                    ],
+            type: 'single',
+            hasGrid: true,
+                     onChange: function (data) {
+                        var file_name = "./img/thermal_image_1_large" + data.fromNumber%10 + ".png";
+                        console.log(data.fromNumber);
+                        $(".bed_sore_image").attr("src",file_name);
+                            }
+                });
     </script>
 
 
