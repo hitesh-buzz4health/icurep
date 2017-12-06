@@ -8609,3 +8609,12 @@ a.fill-div {
 .bg-white {
   background-color: white;
 }
+
+.canvas-height {
+  display: block;
+  height: 200px;
+}
+
+.weight-font {
+  font-size: 18px;
+}
