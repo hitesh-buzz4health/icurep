@@ -8592,3 +8592,20 @@ a.fill-div {
 .image-bed-sore {
   align-items: center;
 }
+
+.medical-icu-list {
+  width: 150px;
+  height: 60px;
+  /*font-size: 24px;*/
+  background-color: white;
+}
+
+.medical-icu-list-cc {
+  font-size: 11.5px;
+  height: 60px;
+  background-color: white;
+}
+
+.bg-white {
+  background-color: white;
+}
